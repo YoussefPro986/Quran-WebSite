@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>    
+    <meta name="author" content="Youssef Pro (youssefpro986@gmail.com)">
+    <title>Quran WebSite</title>
+    
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="wrap d-block mx-auto">
+        <div class="card mb-3 text-white bg-primary">
+            <div class="card-header">
+                <div class="float-left">
+                    <strong>Quran WebSite</strong>
+                </div>
+                <div class="float-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div class="float-left">
+                    <input type="button" id="btnFavorites" class="btn btn-sm btn-warning" value="عرض المفضلة">
+                </div>                
+                <div class="float-right">
+                    <form action="#" id="frmSearch">
+                        <div class="float-left">
+                            <input type="text" required id="search" class="form-control small" placeholder="ابحث في الترجمة">
+                        </div>
+                        <div class="float-left">&nbsp;</div>
+                        <div class="float-right">
+                            <input type="submit" id="searchBtn" class="btn btn-sm btn-success" value="بحث">
+                            <div class="float-none"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <select name="chapter" id="chapter" class="form-control" disabled>
+                            <option value="">حدد السورة</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <div class="result">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">
+                    <div class="float-left">
+                        <strong class="info"></strong>
+                    </div>
+                    <div class="float-right">
+                        <select name="verse" id="verse">
+                            <option value="">GoTo Verse</option>
+                        </select>
+                    </div>
+                    <div class="float-right">&nbsp;&nbsp;&nbsp;</div>
+                    <div class="float-right">
+                        <span class="badge badge-warning count">Total Verses: 00</span>
+                    </div>
+                    <div class="float-none"></div>
+                </div>
+                <div class="card-body main"></div>
+            </div>
+        </div>
+    
+        <div id="top" class="bg-warning text-white" style="display:none;">&uarr;</div>
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
